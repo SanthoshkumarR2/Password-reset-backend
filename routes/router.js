@@ -179,7 +179,7 @@ router.post("/sendpasswordlink", async (req, res) => {
                 from: "santhoshkumarstudy@gmail.com",
                 to: email,
                 subject: "Send Email for Password Reset",
-                text: `This Link Valid 5 minutes https://password-reset-frontend-gamma.vercel.app/forgotpassword/${userfind.id}/${setusertoken.verifytoken}`
+                text: `This Link Valid 5 minutes https://password-reset-frontend-sigma.vercel.app/forgotpassword/${userfind.id}/${setusertoken.verifytoken}`
             }
 
             transporter.sendMail(mailOptions, (error, info) => {

@@ -10,14 +10,14 @@ const port = 4000;
 
 
 
-// app.get("/", function (req, res) {
-//     res.status(201).json("Welcome to Password Reset Authentication App")
-// })
+app.get("/", function (req, res) {
+    res.status(201).json("Welcome to Password Reset Authentication App")
+})
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "*"
+    origin: "https://password-reset-frontend-sigma.vercel.app"
 }));
 app.use(router);
 
